@@ -1,4 +1,5 @@
 
+
 body, h1, h2, h3, p, a, img, input, textarea, button {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@ body, h1, h2, h3, p, a, img, input, textarea, button {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #0c0b0b;
     color: #333;
 }
 
@@ -27,7 +28,7 @@ h1, h2, h3 {
 }
 
 header {
-    background-color: #ff6f61;
+    background-color: #181717f8;
     padding: 15px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -79,16 +80,16 @@ nav ul li a {
     border-radius: 30px;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    color: white;
+    color: rgb(19, 18, 18);
     display: inline-block;
 }
 
 .btn-primary {
-    background-color: #ff6f61;
+    background-color: #e0cbc9;
 }
 
 .btn-primary:hover {
-    background-color: #ff4c41;
+    background-color: #0bc798;
 }
 
 .btn-secondary {
@@ -157,7 +158,7 @@ nav ul li a {
 
 .contato button {
     padding: 10px;
-    background-color: #ff6f61;
+    background-color: #131211;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -192,7 +193,7 @@ footer {
 }
 
 .close {
-    color: #aaa;
+    color: #fdfdfd;
     float: right;
     font-size: 28px;
     cursor: pointer;
