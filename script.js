@@ -1,20 +1,32 @@
-
 function openModal(title, description, price, imageUrl) {
-    document.getElementById('modal-title').innerText = title;
-    document.getElementById('modal-description').innerText = description;
-    document.getElementById('modal-price').innerText = price;
-    document.getElementById('modal-image').src = imageUrl;
-    document.getElementById('myModal').style.display = 'block';
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const modalPrice = document.getElementById('modal-price');
+    const modalImage = document.getElementById('modal-image');
+    const modal = document.getElementById('myModal');
+
+    modalTitle.innerText = title;
+    modalDescription.innerText = description;
+    modalPrice.innerText = price;
+    modalImage.src = imageUrl;
+
+    modal.style.display = 'block';
 }
 
 function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'none';
 }
-
 
 window.onclick = function(event) {
     const modal = document.getElementById('myModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
+    if (event.target === modal) {
+        closeModal(); 
     }
-}
+};
+
+window.onkeydown = function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+};
